@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<ol>
+		<li>What is the Hypertext Transfer Protocol (HTTP)</li>
+		<p><b>Hypertext Transfer Protocol</b> (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML.</p>
+
+		<li>Why is HTTP called a stateless protocol?</li>
+		<p>HTTP is a stateless protocol as server does not keep any data (state) between two requests.</p>
+
+		<li>Describe the three phases of establishing a session using client-server protocols such as HTTP</li>
+		<p>The client establishes a TCP connection (or the appropriate connection if the transport layer is not TCP). The client sends its request, and waits for the answer. The server processes the request, sending back its answer, providing a status code and appropriate data.</p>
+
+		<li>Describe the parameters on a get and post request.</li>
+		<p>
+			Request has body - No<br>
+			Successful response has body - Yes<br>
+			Safe - Yes<br>
+			Idempotent - Yes<br>
+			Cacheable - Yes<br>
+			Allowed in HTML forms - Yes
+		</p>
+		<p>
+			Request has body - Yes<br>
+            Successful response has body - Yes<br>
+            Safe - No<br>
+            Idempotent - No<br>
+            Cacheable - Only if freshness information is included<br>
+            Allowed in HTML forms - Yes<br>
+		</p>
+
+		<li>What are the HTTP response status code and What do the HTTP status codes, 200, and 404 indicate?</li>
+		<p>HTTP response status codes are:
+			<ul>
+				<li type="circle"> Informational Responses</li>
+				<li>Successful Responses </li>
+				<li>Redirects</li>
+				<li> Client Errors</li>
+				<li> Servers Errors </li>
+			</ul>
+		
+			<b>Code 200: </b> The request has succeeded.<br>
+			<b>Code 404: </b> The server can not find requested resource.
+		</p>
+
+		<li>What are HTTP cookies? Give an example.</li>
+		<p>
+			An <b>HTTP cookie</b> is a small piece of data that a server sends to the user's web browser. The browser may store it and send it back with the next request to the same server. For examples: web cookie, browser cookie etc.
+		</p>
+
+		<li>Why are cookies a security issue?</li>
+		<p>Cookies are often used in web application to identify a user and their authenticated session, so stealing a cookie can lead to hijacking the authenticated user's session. </p>
+
+		<li>Describe session hijacking and XSS</li>
+		<p>Common ways to steal cookies include Social Engineering or exploiting an XSS vulnerability in the application.</p>
+		<p>The HttpOnly cookie attribute can help to mitigate this attack by preventing access to cookie value through JavaScript. Exfiltration avenues can be limited by deploying a strict Content-Security-Policy.</p>
+
+		<li>Describe Cross-site request forgery(CSRF)</li>
+		<p>	CSRF (Cross-Site Request Forgery) is an attack that impersonates a trusted user and sends a website unwanted commands. This can be done, for example, by including malicious parameters in a URL behind a link that purports to go somewhere else.	
+		</p>
+
+		<li>What are Cross-site HTTP requests (CORS) and what requests use CORS?</li>
+		<p>Cross-site HTTP requests are HTTP requests for resources from a different domain than the domain of the resource making the request. This cross-origin sharing standard is used to enable cross-site HTTP requests for:
+			<ul>
+				<li> Invocations of the XMLHttpRequest or Fetch APIs in a cross-site manner, as discussed above. </li>
+				<li>Web Fonts (for cross-domain font usage in @font-face within CSS), so that servers can deploy TrueType fonts that can only be cross-site loaded and used by web sites that are permitted to do so.</li>
+				<li>WebGL textures.</li>
+				<li>Images/video frames drawn to a canvas using drawImage().</li>
+			</ul>
+
+			</body>
+</html>

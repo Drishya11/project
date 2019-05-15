@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <style>
+            body {
+              margin: 0px;
+                padding: 0px;
+            }
+            
+            
+/*for top cotainer*/
+            
+            .wrapper1{
+                display: grid;
+                grid-template-columns: auto auto;
+                background-color: #333;
+                color: #444;
+            }
+            
+            .box1{
+                background-position:center;
+                background-size: cover;                
+                display: grid;
+                background-color: #f4f4f4;
+                color: #fff;
+                background-size: 25vh;
+                }
+            .box1>p{
+                margin-top:150px;
+               color:#333;
+                }
+            .box>p,h1{
+                margin-top:-170px;
+                color:#333;
+                font-size:3em;
+            }
+            .timg{
+                padding: 60px 75px 75px 60px;;
+            }
+            
+            #w1b1{
+                color:#111111;
+                line-height: 25px;
+                font-size: 18px;
+                margin-top: -190px;
+                padding-right: 150px;
+            }
+            
+            
+            
+/*        for desktop*/
+            @media only screen and (Max-width: 992px ){
+              .wrapper1{
+                    display: grid;
+                    grid-template-columns: auto;
+                    grid-gap: 5px;
+                    background-color: #fcfcfc;
+                     overflow: hidden;
+                }
+                
+                .box1{                
+                background-position:center;
+                background-size: cover;                
+                display: grid;
+                color: #fff;
+                padding:25px;
+                font-size: 150%;
+                background-size: 25vh;
+                }
+                .timg{
+                    height:320px;
+                    padding:0px;
+                    
+                }
+                .box1>p{
+                    margin-top:2px;
+                    font-size: 0.8em;
+                    color:#333;
+                }
+            .box>p,h1{
+                margin-top:-10px;
+                color:#333;
+                font-size:2em;
+            }
+            
+            #w1b1{
+                color:#111111;
+                line-height: 25px;
+                font-size: 18px;
+                margin-top:-150px;;
+                padding-right: 15px;
+            }
+            
+        }  
+            
+            
+            
+/*            for mobile device*/
+            @media only screen and (max-width:600px){
+                
+                 .wrapper1{
+                    display: grid;
+                    grid-template-columns: auto;
+                    grid-gap: 5px;
+                    background-color: #fcfcfc;
+                     overflow: hidden;
+                }
+                
+                .box1{                
+                background-position:center;
+                background-size: cover;                
+                display: grid;
+                color: #fff;
+                padding:25px;
+                font-size: 150%;
+                background-size: 25vh;
+                }
+                .timg{
+                    height:320px;
+                    padding:0px;
+                    
+                }
+                .box1>p{
+                margin-top:2px;
+                    font-size: 0.8em;
+               color:#333;
+                }
+            .box>p,h1{
+                margin-top:-10px;
+                color:#333;
+                font-size:2em;
+            }
+            
+            #w1b1{
+                color:#111111;
+                line-height: 25px;
+                font-size: 18px;
+                margin-top:0px;;
+                padding-right: 15px;
+            }
+            }
+/*            ended*/
+            
+             
+            .wrapper {
+                /*height:100vh;
+                background-position:center;
+                background-size: cover;
+                */
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-gap: 10px;
+                background-color: #fff;
+                color: #444;
+            }
+              .box{
+                
+                background-position:center;
+                background-size: cover;                
+                display: grid;
+                background-color: #444;
+                color: #fff;
+                padding:25px 100px 25px 100px;
+                font-size: 150%;
+                background-size: 25vh;
+                }
+            
+    
+                    
+        </style>
+        
+        <title>css grid demo</title>
+    </head>
+    <body>
+        <div class="wrapper1">
+            <div class="box1 a"><img src="asset/images/about.png" class="timg"></div>
+            <div class="box1 b"><p>Welcome to Ristora</p>
+                    <h1>Descover Our story</h1>
+                    <p id="w1b1" style="text-align: justify;">We are pleased to introduce “Sam’s Restaurant" established in 1989 A.D. with a new taste which is reflective of unique Royal Indian, Chinese and Nepalese cuisine. Born in mountain of the Himalayas this has become a favorite style of food throughout the world</p>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="box c">C</div>
+            <div class="box d">D</div>
+            <div class="box e">E</div>
+            <div class="box f">F</div>
+            <div class="box e">E</div>
+            <div class="box f">F</div>
+        </div>
+    </body>
+</html>
